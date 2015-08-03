@@ -4,7 +4,7 @@ var cheerio = require('cheerio');
 
 var tvCount = 0;
 
-//getRipleyJson();
+getRipleyJson();
 getFalabellaJson();
 
 function getFalabellaJson(){
@@ -28,7 +28,8 @@ function getFalabellaJson(){
             //DEL TELEVISOR DONDE SE ENCUENTRA EL NOMBRE DEL MODELO.
             $('.cajaLP1x').each(function(i, elem) {
                 if($(this).find($('.quickView')).find('a').attr('href')!= null){
-                    var precio = $(this).find($('.precio1')).text().substr(1,100).trim();
+                    var precio = ""+$(this).find($('.precio1')).text().trim();
+                    precio = precio.substr(1,100).trim();
                     var url = "http://www.falabella.com"+$(this).find($('.quickView')).find('a').attr('href');
                     //LLAMAMOS A LA URL EXTRAIDA PARA SACAR EL MODELO DE LA TELEVISION.
                     getFalabellaModelName(url,precio,televisoresFalabella);
