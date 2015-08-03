@@ -1,0 +1,28 @@
+{
+  "name": "tvscraping",
+  "version": "0.0.1",
+  "description": "Tv Scrapping from Ripley.cl",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soydeveloper/TvScraper.git"
+  },
+  "keywords": [
+    "Web",
+    "Scraping",
+    "TV"
+  ],
+  "author": "Andoni Lloret",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/soydeveloper/techK/issues"
+  },
+  "homepage": "https://github.com/soydeveloper/techK#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.60.0"
+  }
+}
