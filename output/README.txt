@@ -1,0 +1,1 @@
+En esta carpeta se guardan los ficheros JSON extraidos de la WEB
